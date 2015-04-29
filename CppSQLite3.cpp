@@ -990,7 +990,7 @@ CppSQLite3Query CppSQLite3Statement::execQuery()
 	}
 }
 
-void CppSQLite3Statement::bind(int nParam, const unsigned long long  int64value)
+void CppSQLite3Statement::bind(int nParam, const sqlite_int64  int64value)
 {
 	checkVM();
 	int nRes = sqlite3_bind_int64(mpVM, nParam, int64value);

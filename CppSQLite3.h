@@ -245,7 +245,7 @@ public:
     int execDML();
 
     CppSQLite3Query execQuery();
-	void bind(int nParam, const unsigned long long  int64value);
+	void bind(int nParam, const sqlite_int64  int64value);
     void bind(int nParam, const char* szValue);
     void bind(int nParam, const int nValue);
     void bind(int nParam, const double dwValue);
@@ -253,7 +253,7 @@ public:
     void bindNull(int nParam);
 
 	int bindParameterIndex(const char* szParam);
-	void bind(const char* szParam, const unsigned long long  int64value);
+	void bind(const char* szParam, const sqlite_int64  int64value);
     void bind(const char* szParam, const char* szValue);
     void bind(const char* szParam, const int nValue);
     void bind(const char* szParam, const double dwValue);
